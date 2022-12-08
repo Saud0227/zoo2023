@@ -1,0 +1,11 @@
+Bace
+#F3F8FF
+
+Secondary
+#DEECFF
+
+Heavy
+#C6CFFF
+
+Highlight
+#E8D3FF
