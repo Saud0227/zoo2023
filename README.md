@@ -17,4 +17,4 @@ Webutveckling Projekt 1
 
 ## Github Html Prewview
 
-<https://htmlpreview.github.io/?https://github.com/saud0227/zoo2023/blob/master/index.html>
+<https://htmlpreview.github.io/?https://github.com/Saud0227/zoo2023/blob/master/index.html>
