@@ -14,3 +14,7 @@ Webutveckling Projekt 1
 ## To Do
 
 <https://github.com/users/Saud0227/projects/2/views/1>
+
+## Github Html Prewview
+
+<https://htmlpreview.github.io/?https://github.com/saud0227/zoo2023/blob/master/index.html>
