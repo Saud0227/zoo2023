@@ -124,6 +124,7 @@ div.image-item {
     background-color:rgb(222, 236, 255, 0.5);
     border-radius: 20px;
     font-weight:lighter;
+    transition: 0.7s;
 }
 
 #logo-text{
