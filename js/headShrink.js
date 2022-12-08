@@ -6,8 +6,8 @@ function scrollFunction() {
 
     document.getElementById("header").style.height = "5vh";
     document.getElementById("header").style.borderRadius = "10px";
-    document.getElementById("header").style.width = "90%";
-    document.getElementById("header").style.left = "5%";
+    document.getElementById("header").style.width = "95%";
+    document.getElementById("header").style.left = "2.5%";
     document.getElementById("header").style.top = "3%";
 
 
