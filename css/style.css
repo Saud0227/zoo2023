@@ -21,7 +21,7 @@
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #516076;
 }
 
 
@@ -30,7 +30,7 @@ a.nav-itm {
     display: block;
     font-size: 1em;
 
-    background-color: #DEECFF;
+    /* background-color: #DEECFF; */
     text-align: center;
 
     margin: 0;
@@ -49,7 +49,7 @@ a.nav-itm {
 footer {
 
     width: 100%;
-    height: 10vh;
+    height: 20vh;
     background-color: #516076;
 }
 
@@ -59,14 +59,15 @@ div.main-wrap {
     flex-direction: column;
 
     width: auto;
-    height: 250vh;
+    height: 290vh;
     background-color: #F3F8FF;
 
 }
 
-div.spacer {
+div.spacer {height:80vh;
     width: auto;
     background-color: #516076;
+    height: 10vh;
 }
 
 /* Kopierade kod från stackoverflow, venne hur det funkar
@@ -108,10 +109,7 @@ div.image-item {
     align-items: center;
 }
 
-
-#cover1 {
-    background-image: url(../img/food/ice-cream.jpg);
-    background-position-y: 30%;
+div.main-screen {
     width: auto;
     height: 90vh;
     display: flex;
@@ -120,15 +118,21 @@ div.image-item {
     align-items: center;
 }
 
+
+/* #cover1 {
+    background-image: url(../img/food/ice-cream.jpg);
+    background-position-y: 30%;
+} */
+
 #cover-main-line {
     font-family: 'Playfair Display', serif;
     font-size: 5em;
+    font-weight: lighter;
+    text-align: center;
     margin: 0px;
     padding: 15px;
     background-color: rgb(222, 236, 255, 0.5);
     border-radius: 20px;
-    font-weight: lighter;
-    text-align: center;
     transition: 0.7s;
 }
 
@@ -147,24 +151,38 @@ div.section-content {
     padding-right: 5%;
     background-color: rgb(222, 236, 255);
     display: flex;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    height:80vh;
 }
 
 
 div.section-card {
     height: 80%;
-    min-width: 300px;
-    width: 40%;
-    margin: 5%;
+    width: 80%;
+    /* padding:2%;
+    margin: 2%; */
     /* padding: 0px; */
     background-color: rgb(198, 207, 255, 0.7);
     border-radius: 10px;
-    /* border */
+    /* display: flex;
+    justify-content:space-evenly;
+    align-items:center; */
+    display: grid;
+    grid-template-rows: 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    justify-items: center;
+    align-items: center;
 }
+
+div.section-text-card {
+    width: 95%;
+    height: 95%;
+    border-radius: 10px;
+
+}
+
 
 div.section-card a{
     background-position-x: center;
@@ -179,28 +197,30 @@ div.section-card a{
     /* margin: 1%; */
     border-radius: 10px;
     justify-content: center;
-    background-image: url(../img/food/Dining-Options_Header.jpeg);
     transition:0.3s;
+    /* margin-left: 5px; */
+
 }
 
 div.section-card a:hover{
     border-style: solid;
     border-color:#9c55e8;
-    color: #fff;
+    color: #9c55e8;
     transition:0.3s;
     border-width:5px;
-}
-
-div.section-img {
-   display: flex;
-   justify-content: center;
-   align-items:center;
-}
-
-#order-img {
-    background-image: url(../img/food/Dining-Options_Header.jpeg);
+    margin-left: 0px;
+    /* transition: 0.3s; */
 }
 
 
 
+#footer-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+}
 
+#footer-smallprint {
+    text-align: center;
+}
