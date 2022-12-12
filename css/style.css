@@ -1,6 +1,29 @@
 /* Title font */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&display=swap');
 
+a {
+    text-decoration: none;
+    color: #451a74;
+}
+
+a:hover{
+    color: #9c55e8;
+}
+
+
+footer {
+
+    width: 100%;
+    height: 20vh;
+    background-color: #516076;
+}
+
+img {
+    margin: 10px;
+
+    max-width: 98%;
+    max-height: 400px;
+}
 
 #header {
     position: fixed;
@@ -19,14 +42,9 @@
 }
 
 
-a {
-    text-decoration: none;
-    color: #516076;
-}
 
 
-
-a.nav-itm {
+a.nav-item {
     display: block;
     font-size: 1em;
 
@@ -46,20 +64,14 @@ a.nav-itm {
 }
 
 
-footer {
-
-    width: 100%;
-    height: 20vh;
-    background-color: #516076;
-}
-
 
 div.main-wrap {
     display: flex;
     flex-direction: column;
 
     width: auto;
-    height: 290vh;
+
+    height: auto;
     background-color: #F3F8FF;
 
 }
@@ -90,12 +102,6 @@ kan selectas med cursor*/
 }
 
 
-img {
-    margin: 10px;
-
-    max-width: 98%;
-    max-height: 400px;
-}
 
 
 div.image-item {
@@ -164,7 +170,7 @@ div.section-card {
     /* padding:2%;
     margin: 2%; */
     /* padding: 0px; */
-    background-color: rgb(198, 207, 255, 0.7);
+    background-color: rgb(198, 207, 255, 0.5);
     border-radius: 10px;
     /* display: flex;
     justify-content:space-evenly;
@@ -205,7 +211,6 @@ div.section-card a{
 div.section-card a:hover{
     border-style: solid;
     border-color:#9c55e8;
-    color: #9c55e8;
     transition:0.3s;
     border-width:5px;
     margin-left: 0px;
@@ -223,4 +228,62 @@ div.section-card a:hover{
 
 #footer-smallprint {
     text-align: center;
+}
+
+
+
+#about-us-grid{
+    width:auto;
+    height:175vh;
+    padding-top:10vh;
+    padding-bottom:10vh;
+    row-gap: 5vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    'img1 s1 s1'
+    's2 s2 img2';
+    align-items:center;
+}
+
+
+#img1 {
+    grid-area: img1;
+}
+
+
+#img2 {
+    grid-area: img2;
+}
+
+#s1{
+    grid-area: s1;
+}
+
+#s2{
+    grid-area: s2;
+}
+
+div.about-grid-item{
+    background-color:rgb(198, 207, 255, 0.5);
+    width:100%;
+    height:95%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+div.about-img{
+    width:100%;
+    height:100%;
+    /* margin-top: 2.5%;
+    margin-bottom: 2.5%; */
+}
+
+
+div.text-item{
+    padding-left: 10%;
+    padding-right: 10%;
+    width:80%;
 }
