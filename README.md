@@ -11,7 +11,6 @@ Webutveckling Projekt 1
 
 <https://docs.google.com/document/d/1vNXWG34hW6WJK6Rzzo8e07DGwmtPYqW1XaIAX7-q4hI/edit#heading=h.8rc3fzz9m1yb>
 
-
 ## Github Html Prewview
 
 <https://htmlpreview.github.io/?https://github.com/Saud0227/zoo2023/blob/master/index.html>
