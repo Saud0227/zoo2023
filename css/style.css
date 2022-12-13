@@ -287,3 +287,37 @@ div.text-item{
     padding-right: 10%;
     width:80%;
 }
+
+
+
+
+
+
+div.card-layout {
+    /* padding-top: 5vh;
+    padding-bottom: 5vh; */
+
+    padding: 5vw;
+
+    width: auto;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    row-gap: 4vh;
+    column-gap: 2vw;
+}
+div.card {
+    width: 20vw;
+    height: 60vh;
+    background-color: rgb(153, 69, 69);
+    border-radius: 15px;
+}
+
+
+div.card-img{
+    border-radius: 15px 15px 0 0;
+    width: auto;
+    height: 60%;
+    background-color: red;
+}
