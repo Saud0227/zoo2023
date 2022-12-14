@@ -310,14 +310,26 @@ div.card-layout {
 div.card {
     width: 20vw;
     height: 60vh;
-    background-color: rgb(153, 69, 69);
+    background-color: #C6CFFF;
     border-radius: 15px;
+    min-width: 250px;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: #516076;
 }
 
 
 div.card-img{
-    border-radius: 15px 15px 0 0;
+    border-radius: 10px 10px 0 0;
     width: auto;
     height: 60%;
     background-color: red;
+    border-style: solid;
+    border-bottom-width: 5px;
+    border-top-width:0;
+    border-left-width:0;
+    border-right-width:0;
+    border-color: #516076;
+
 }
