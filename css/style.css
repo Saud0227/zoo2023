@@ -6,7 +6,7 @@ a {
     color: #451a74;
 }
 
-a:hover{
+a:hover {
     color: #9c55e8;
 }
 
@@ -76,15 +76,18 @@ div.main-wrap {
 
 }
 
-div.spacer {height:80vh;
+div.spacer {
+    height: 80vh;
     width: auto;
     background-color: #516076;
     height: 10vh;
 }
 
-/* Kopierade kod från stackoverflow, venne hur det funkar
+/*
+Kopierade kod från stackoverflow, venne hur det funkar
 men reslutatet är att texten som påverkars av klassen inte
-kan selectas med cursor*/
+kan selectas med cursor
+*/
 .no-select {
     -webkit-touch-callout: none;
     /* iOS Safari */
@@ -160,7 +163,7 @@ div.section-content {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    height:80vh;
+    height: 80vh;
 }
 
 
@@ -190,7 +193,7 @@ div.section-text-card {
 }
 
 
-div.section-card a{
+div.section-card a {
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
@@ -203,16 +206,16 @@ div.section-card a{
     /* margin: 1%; */
     border-radius: 10px;
     justify-content: center;
-    transition:0.3s;
+    transition: 0.3s;
     /* margin-left: 5px; */
 
 }
 
-div.section-card a:hover{
+div.section-card a:hover {
     border-style: solid;
-    border-color:#9c55e8;
-    transition:0.3s;
-    border-width:5px;
+    border-color: #9c55e8;
+    transition: 0.3s;
+    border-width: 5px;
     margin-left: 0px;
     /* transition: 0.3s; */
 }
@@ -232,19 +235,19 @@ div.section-card a:hover{
 
 
 
-#about-us-grid{
-    width:auto;
-    height:175vh;
-    padding-top:10vh;
-    padding-bottom:10vh;
+#about-us-grid {
+    width: auto;
+    height: 175vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     row-gap: 5vh;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    'img1 s1 s1'
-    's2 s2 img2';
-    align-items:center;
+        'img1 s1 s1'
+        's2 s2 img2';
+    align-items: center;
 }
 
 
@@ -257,35 +260,35 @@ div.section-card a:hover{
     grid-area: img2;
 }
 
-#s1{
+#s1 {
     grid-area: s1;
 }
 
-#s2{
+#s2 {
     grid-area: s2;
 }
 
-div.about-grid-item{
-    background-color:rgb(198, 207, 255, 0.5);
-    width:100%;
-    height:95%;
+div.about-grid-item {
+    background-color: rgb(198, 207, 255, 0.5);
+    width: 100%;
+    height: 95%;
     padding-top: 10px;
     padding-bottom: 10px;
 
 }
 
-div.about-img{
-    width:100%;
-    height:100%;
+div.about-img {
+    width: 100%;
+    height: 100%;
     /* margin-top: 2.5%;
     margin-bottom: 2.5%; */
 }
 
 
-div.text-item{
+div.text-item {
     padding-left: 10%;
     padding-right: 10%;
-    width:80%;
+    width: 80%;
 }
 
 
@@ -300,13 +303,14 @@ div.card-layout {
     padding: 5vw;
 
     width: auto;
-    height:auto;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
     row-gap: 4vh;
     column-gap: 2vw;
 }
+
 div.card {
     width: 20vw;
     height: 60vh;
@@ -320,16 +324,133 @@ div.card {
 }
 
 
-div.card-img{
+div.card-img {
     border-radius: 10px 10px 0 0;
     width: auto;
     height: 60%;
     background-color: red;
     border-style: solid;
     border-bottom-width: 5px;
-    border-top-width:0;
-    border-left-width:0;
-    border-right-width:0;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
     border-color: #516076;
 
+}
+
+
+
+#order-grid{
+    display: grid;
+    width:auto;
+    height: auto;
+    grid-template-rows: 20vh 1fr;
+    grid-template-columns: 30vw 1fr;
+    grid-template-areas:
+    "top top"
+    "as mn";
+}
+
+#top {
+    grid-area: top;
+    background-color: #516076;
+}
+
+#aside-bar{
+    grid-area: as;
+    background-color:#DEECFF
+}
+
+#aside-bar h2{
+    margin-left: 10%;
+}
+
+#main-wrap{
+    grid-area: mn;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-wrap div{
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    width: 90%;
+    margin-left: 0;
+    border-radius: 10px;
+}
+
+div.aside-sticky{
+    position:sticky;
+    width:90%;
+    height:auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    top: 10vh;
+    background-color: #E8D3FF;
+    border-radius: 10px;
+    margin: 2.5vh;
+}
+
+
+div.section-header {
+    height:20vh;
+    background-color:#E8D3FF;
+    display: flex;
+    align-items:center;
+}
+
+div.section-header h1{
+    margin: 0 0 0 2vw;
+    align-self: center;
+}
+
+
+div.order-card{
+    height:60vh;
+    width: 85% !important;
+    margin-left: 5% !important;
+    background-color: #C6CFFF;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.order-card-text{
+    display: flex;
+    flex-direction: column;
+}
+
+/* div.order-card div{
+    margin-left: 1%;
+    margin-right: 1%;
+} */
+
+div.order-card h1{
+    text-align: center;
+}
+
+div.order-card h1{
+    margin: 0;
+}
+
+div.order-card hr{
+    border-color: black;
+    margin-left: 5%;
+    width: 90%;
+}
+
+
+div.order-card p{
+    margin: 5%;
+}
+
+
+div.order-card h2{
+    margin: 5%;
+    /* justify-self: bottom; */
+    margin-top: auto;
+    font-size: 3em;
+    font-weight: 100;
+    text-align: center;
 }
