@@ -411,7 +411,7 @@ div.order-card{
     height:60vh;
     width: 85% !important;
     margin-left: 5% !important;
-    background-color: #C6CFFF;
+    background-color: rgba(198, 206, 255, 0.5);
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
