@@ -15,7 +15,7 @@ footer {
 
     width: 100%;
     height: 20vh;
-    background-color: #516076;
+    background-color: #3C4858;
 }
 
 img {
@@ -32,12 +32,20 @@ img {
     width: 100%;
     height: 10vh;
     background-color: #C6CFFF;
-    display: flex;
+    /* display: flex;
     justify-content: space-evenly;
+    align-items: center; */
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100%;
+    justify-items: center;
     align-items: center;
+
+
     transition: 0.7s;
 
-    font-size: 1.5em;
+    font-size: 2em;
+
 
 }
 
@@ -79,7 +87,7 @@ div.main-wrap {
 div.spacer {
     height: 80vh;
     width: auto;
-    background-color: #516076;
+    background-color: #3C4858;
     height: 10vh;
 }
 
@@ -227,10 +235,12 @@ div.section-card a:hover {
     font-size: 2em;
     font-weight: lighter;
     text-align: center;
+    color: white;
 }
 
 #footer-smallprint {
     text-align: center;
+    color: white;
 }
 
 
@@ -314,13 +324,13 @@ div.card-layout {
 div.card {
     width: 20vw;
     height: 60vh;
-    background-color: #C6CFFF;
+    background-color: #7e9ac2;
     border-radius: 15px;
     min-width: 250px;
 
-    border-style: solid;
+    /* border-style: solid;
     border-width: 5px;
-    border-color: #516076;
+    border-color: #3C4858; */
 }
 
 
@@ -329,16 +339,23 @@ div.card-img {
     width: auto;
     height: 60%;
     background-color: red;
-    border-style: solid;
+
+    /* border-style: solid;
     border-bottom-width: 5px;
     border-top-width: 0;
     border-left-width: 0;
     border-right-width: 0;
-    border-color: #516076;
+    border-color: #3C4858; */
 
 }
 
+div.card h1{
+    margin-left: 5%;
+}
 
+div.card h3{
+    margin-left: 5%;
+}
 
 #order-grid{
     display: grid;
@@ -353,7 +370,7 @@ div.card-img {
 
 #top {
     grid-area: top;
-    background-color: #516076;
+    background-color: #3C4858;
 }
 
 #aside-bar{
