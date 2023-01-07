@@ -3,11 +3,11 @@
 
 a {
     text-decoration: none;
-    color: #451a74;
+    color: #FFFFFF;
 }
 
 a:hover {
-    color: #9c55e8;
+    color: #7bc2ff;
 }
 
 
@@ -31,7 +31,8 @@ img {
     left: 0%;
     width: 100%;
     height: 10vh;
-    background-color: #C6CFFF;
+    background-color: #8dafff;
+    /* background: linear-gradient(0.25turn, #7bc2ff, #E8D3FF); */
     /* display: flex;
     justify-content: space-evenly;
     align-items: center; */
@@ -62,7 +63,7 @@ a.nav-item {
     margin: 0;
     padding: 10px;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 
@@ -122,7 +123,7 @@ div.image-item {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -149,16 +150,20 @@ div.main-screen {
     margin: 0px;
     padding: 15px;
     background-color: rgb(222, 236, 255, 0.5);
-    border-radius: 20px;
+    /* background: linear-gradient(#9c55e870,#7bc2ff70); */
+    border-radius: 15px;
     transition: 0.7s;
+
 }
 
 #logo-text {
     font-family: 'Playfair Display', serif;
     padding: 10px;
-    background-color: #9c58e4;
+    /* background-color: #7bc2ff; */
+    background: linear-gradient(#9c55e8,#7bc2ff);
     border-radius: 100px;
     font-weight: bold;
+    margin: 0;
 }
 
 
@@ -166,7 +171,7 @@ div.section-content {
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: rgb(222, 236, 255);
+    background-color: #eef1ff;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -181,8 +186,8 @@ div.section-card {
     /* padding:2%;
     margin: 2%; */
     /* padding: 0px; */
-    background-color: rgb(198, 207, 255, 0.5);
-    border-radius: 10px;
+    background-color: #aac4ff;
+    border-radius: 15px;
     /* display: flex;
     justify-content:space-evenly;
     align-items:center; */
@@ -193,41 +198,44 @@ div.section-card {
     align-items: center;
 }
 
-div.section-text-card {
+div.section-card div{
     width: 95%;
     height: 95%;
-    border-radius: 10px;
+    border-radius: 15px;
 
 }
 
 
-div.section-card a {
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
-    height: 95%;
-    /* margin: 1%; */
-    border-radius: 10px;
-    justify-content: center;
-    transition: 0.3s;
-    /* margin-left: 5px; */
+div.section-card a{
+    /* background-color:red; */
+    align-self: center;
+    display: block;
+
+    padding: 5% 15% 5% 15%;
+    border-radius:15px;
+
+    background-size: 250% 100%;
+    background-image: linear-gradient(0.25turn, #86aaff,#b274ff,#86aaff);
+    transition: all .6s ease-in-out;
+    text-align: center center;
+    text-transform:uppercase;
+    font-size: 2em;
+    /* margin-top: 30%; */
+    /* margin-bottom: 20%; */
+
 
 }
 
-div.section-card a:hover {
-    border-style: solid;
-    border-color: #9c55e8;
-    transition: 0.3s;
-    border-width: 5px;
-    margin-left: 0px;
-    /* transition: 0.3s; */
+div.section-card a:hover{
+    background-position-x: 100%;
+    transition: all .6s ease-in-out;
+    color: white;
+
 }
 
+div.section-img {
+
+}
 
 
 #footer-header {
@@ -279,11 +287,11 @@ div.section-card a:hover {
 }
 
 div.about-grid-item {
-    background-color: rgb(198, 207, 255, 0.5);
+    background-color: #d2daff;
     width: 100%;
     height: 95%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
 
 }
 
@@ -324,7 +332,7 @@ div.card-layout {
 div.card {
     width: 20vw;
     height: 60vh;
-    background-color: #7e9ac2;
+    background-color: #aac4ff;
     border-radius: 15px;
     min-width: 250px;
 
@@ -333,12 +341,11 @@ div.card {
     border-color: #3C4858; */
 }
 
-
 div.card-img {
-    border-radius: 10px 10px 0 0;
+    border-radius: 15px 15px 0 0;
     width: auto;
     height: 60%;
-    background-color: red;
+
 
     /* border-style: solid;
     border-bottom-width: 5px;
@@ -349,8 +356,18 @@ div.card-img {
 
 }
 
+div.card-img div {
+    width:100%;
+    height: 5%;
+
+    background-color: #aac4ff;
+    border-radius: 15px 15px 0 0;
+    min-height: 15px;
+}
+
 div.card h1{
     margin-left: 5%;
+    margin-top: 0;
 }
 
 div.card h3{
@@ -361,8 +378,8 @@ div.card h3{
     display: grid;
     width:auto;
     height: auto;
-    grid-template-rows: 20vh 1fr;
-    grid-template-columns: 30vw 1fr;
+    grid-template-rows: 10vh 1fr;
+    grid-template-columns: 20vw 1fr;
     grid-template-areas:
     "top top"
     "as mn";
@@ -392,10 +409,10 @@ div.card h3{
 
 #main-wrap div{
     margin-top: 5vh;
-    /* margin-bottom: 2.5vh; */
+    margin-bottom: 2.5vh;
     width: 90%;
     margin-left: 0;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 div.aside-sticky{
@@ -405,9 +422,10 @@ div.aside-sticky{
     padding-top: 5%;
     padding-bottom: 5%;
     top: 10vh;
-    background-color: #E8D3FF;
-    border-radius: 10px;
-    margin: 2.5vh;
+    background: linear-gradient(0.1turn,#7bc2ff, #C6CFFF,#E8D3FF);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 2vh;
 }
 
 
