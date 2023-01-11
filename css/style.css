@@ -1,5 +1,9 @@
-/* Title font */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
 body {
     margin: 0;
@@ -83,7 +87,7 @@ img {
     text-align: center;
 
     margin: 0;
-    padding: 10px;
+    padding: 6px 10px 6px 10px;
     text-decoration: none;
     border-radius: 15px;
 
@@ -169,7 +173,9 @@ div.main-screen {
 } */
 
 #cover-main-line {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lobster', cursive;
+
+    /* font-style: italic; */
     font-size: 5em;
     font-weight: lighter;
     text-align: center;
@@ -183,7 +189,8 @@ div.main-screen {
 }
 
 #logo-text {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lobster', cursive;
+    /* font-style: italic; */
     padding: 10px;
     /* background-color: #7bc2ff; */
     background: linear-gradient(#9c55e8, #5185ff);
@@ -264,7 +271,7 @@ div.section-card a:hover {
 
 
 #footer-header {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lobster', cursive;
     font-size: 2em;
     font-weight: lighter;
     text-align: center;
@@ -392,14 +399,17 @@ div.card div{
     min-width: 250px;
 }
 
+div.card div *{
+    margin: 5%;
+}
+
 div.card p, div.card a{
-    margin-left: 5%;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 1.2em;
     max-width: 95%;
     color:white;
-    font-size: 1rem;
+    font-size: 0.9rem;
 
 
 }
@@ -409,7 +419,10 @@ div.card a {
     /* color: #b700ff;*/
     background: linear-gradient(0.25turn, #7300ff, #004cff, #7300ff, #004cff);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    color:white;
+
     background-size: 250% 100%;
 
     text-decoration: underline;
@@ -417,7 +430,7 @@ div.card a {
 
 
 
-    animation-name: shimer;
+    animation-name: shimmer;
 
     animation-duration: 3.6s;
     animation-iteration-count: infinite;
@@ -429,10 +442,11 @@ div.card a {
 div.card a:hover{
     background: #7300ff;
     -webkit-background-clip: text;
+    background-clip:text;
     -webkit-text-fill-color: transparent;
 }
 
-@keyframes shimer {
+@keyframes shimmer {
     0% {background-position-x: 0%;}
     100% {background-position-x: 100%;}
 }
@@ -444,7 +458,6 @@ div.card-img {
 }
 
 div.card h1 {
-    margin-left: 5%;
     margin-top: 0;
     /* margin-bottom: 0; */
 }
