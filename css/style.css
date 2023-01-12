@@ -287,10 +287,10 @@ div.section-card a:hover {
 
 #about-us-grid {
     width: auto;
-    height: 175vh;
+    height: 190vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    row-gap: 5vh;
+    row-gap: 10vh;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
