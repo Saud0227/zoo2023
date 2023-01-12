@@ -408,7 +408,7 @@ div.card p, div.card a{
     margin-bottom: 0;
     font-size: 1.2em;
     max-width: 95%;
-    color:white;
+    color:#281041;
     font-size: 0.9rem;
 
 
@@ -440,7 +440,7 @@ div.card a {
 
 
 div.card a:hover{
-    background: #7300ff;
+    background: #281041;
     -webkit-background-clip: text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
