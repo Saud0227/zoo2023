@@ -11,7 +11,7 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 
@@ -197,7 +197,7 @@ div.main-screen {
     border-radius: 100px;
     font-weight: bold;
     margin: 0;
-    color: white;
+    color: black;
 }
 
 
